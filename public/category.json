@@ -1,0 +1,279 @@
+[
+   {
+    "id":1,
+    "title" : "single family home",
+    "image":"https://i.ibb.co/HzZGCpS/about1.jpg",
+    "estate": [
+        {
+            "id": 1,
+            "estate_title": "Beautiful Family Home",
+            "category_name": "Single-family homes",
+            "description": "Spacious and modern single-family home with stunning views.",
+            "price": "$500,000",
+            "status": "sale",
+            "area": "2500 sq ft",
+            "location": "123 Main Street, Anytown",
+            "facilities": [
+                "3 bedrooms",
+                "2 bathrooms",
+                "Large backyard"
+            ],
+            "image": "path/to/image1.jpg",
+            "view_details": "Welcome to your dream home! This beautiful single-family home offers an unparalleled living experience. Step inside and be greeted by spacious interiors filled with natural light. Whether you're relaxing in the cozy living room, cooking in the gourmet kitchen, or enjoying the serene backyard, every corner of this home exudes comfort and luxury. With three bedrooms, two bathrooms, and ample living space, there's plenty of room for your family to grow and thrive. Located in a desirable neighborhood, this home offers convenience and tranquility, with easy access to schools, parks, and shopping. Whether you're hosting gatherings or simply unwinding after a long day, this home is the perfect retreat. Don't miss out on the opportunity to make this house your forever home. Schedule a viewing today and experience the magic for yourself!"
+        },
+        {
+            "id": 2,
+            "estate_title": "Classic Single-Family Home",
+            "category_name": "Single-family homes",
+            "description": "Traditional single-family home with spacious rooms and a cozy atmosphere.",
+            "price": "$450,000",
+            "status": "sale",
+            "area": "2200 sq ft",
+            "location": "456 Oak Avenue, Anytown",
+            "facilities": [
+                "4 bedrooms",
+                "3 bathrooms",
+                "Backyard patio"
+            ],
+            "image": "path/to/image5.jpg",
+            "view_details": "Welcome to your dream home! This beautiful single-family home offers an unparalleled living experience. Step inside and be greeted by spacious interiors filled with natural light. Whether you're relaxing in the cozy living room, cooking in the gourmet kitchen, or enjoying the serene backyard, every corner of this home exudes comfort and luxury. With three bedrooms, two bathrooms, and ample living space, there's plenty of room for your family to grow and thrive. Located in a desirable neighborhood, this home offers convenience and tranquility, with easy access to schools, parks, and shopping. Whether you're hosting gatherings or simply unwinding after a long day, this home is the perfect retreat. Don't miss out on the opportunity to make this house your forever home. Schedule a viewing today and experience the magic for yourself!"
+        },
+        {
+            "id": 3,
+            "estate_title": "Charming Victorian Home",
+            "category_name": "Single-family homes",
+            "description": "Historic Victorian home with intricate details and timeless elegance.",
+            "price": "$700,000",
+            "status": "sale",
+            "area": "3000 sq ft",
+            "location": "789 Rose Lane, Anytown",
+            "facilities": [
+                "4 bedrooms",
+                "3.5 bathrooms",
+                "Wrap-around porch"
+            ],
+            "image": "path/to/image12.jpg",
+            "view_details": "Welcome to your dream home! This beautiful single-family home offers an unparalleled living experience. Step inside and be greeted by spacious interiors filled with natural light. Whether you're relaxing in the cozy living room, cooking in the gourmet kitchen, or enjoying the serene backyard, every corner of this home exudes comfort and luxury. With three bedrooms, two bathrooms, and ample living space, there's plenty of room for your family to grow and thrive. Located in a desirable neighborhood, this home offers convenience and tranquility, with easy access to schools, parks, and shopping. Whether you're hosting gatherings or simply unwinding after a long day, this home is the perfect retreat. Don't miss out on the opportunity to make this house your forever home. Schedule a viewing today and experience the magic for yourself!"
+        }
+    ]
+   },
+   {
+    "id":2,
+    "title" : "Townhouses",
+    "image":"https://i.ibb.co/25nP4DP/about-2.jpg",
+    "estate":[
+        {
+            "id": 4,
+            "estate_title": "Cozy Townhouse",
+            "category_name": "Townhouses",
+            "description": "Charming townhouse with historic architecture and modern amenities.",
+            "price": "$300,000",
+            "status": "sale",
+            "area": "1800 sq ft",
+            "location": "456 Elm Street, Anytown",
+            "facilities": [
+                "2 bedrooms",
+                "1.5 bathrooms",
+                "Community garden"
+            ],
+            "image": "path/to/image2.jpg",
+            "view_details": "Welcome to your charming townhouse! This cozy retreat blends historic charm with modern convenience. Nestled in a vibrant community, this townhouse offers the perfect blend of comfort and style. Step inside and be greeted by a warm and inviting atmosphere, with spacious living areas and stylish finishes throughout. The gourmet kitchen is a chef's dream, complete with stainless steel appliances and granite countertops. Upstairs, you'll find two bedrooms, including a luxurious master suite with a spa-like ensuite bathroom. Outside, the community garden provides a tranquil escape from the hustle and bustle of city life. With easy access to parks, shops, and restaurants, this townhouse offers the best of urban living. Whether you're a first-time buyer or looking to downsize, this townhouse is the perfect place to call home. Don't miss out on the opportunity to make this your own slice of paradise. Schedule a viewing today and experience the magic for yourself!"
+        },
+        {
+            "id": 5,
+            "estate_title": "Modern Townhouse",
+            "category_name": "Townhouses",
+            "description": "Sleek and contemporary townhouse with high-end finishes and a minimalist design.",
+            "price": "$400,000",
+            "status": "sale",
+            "area": "1600 sq ft",
+            "location": "789 Maple Street, Anytown",
+            "facilities": [
+                "3 bedrooms",
+                "2.5 bathrooms",
+                "Private rooftop deck"
+            ],
+            "image": "path/to/image6.jpg",
+            "view_details": "Welcome to your charming townhouse! This cozy retreat blends historic charm with modern convenience. Nestled in a vibrant community, this townhouse offers the perfect blend of comfort and style. Step inside and be greeted by a warm and inviting atmosphere, with spacious living areas and stylish finishes throughout. The gourmet kitchen is a chef's dream, complete with stainless steel appliances and granite countertops. Upstairs, you'll find two bedrooms, including a luxurious master suite with a spa-like ensuite bathroom. Outside, the community garden provides a tranquil escape from the hustle and bustle of city life. With easy access to parks, shops, and restaurants, this townhouse offers the best of urban living. Whether you're a first-time buyer or looking to downsize, this townhouse is the perfect place to call home. Don't miss out on the opportunity to make this your own slice of paradise. Schedule a viewing today and experience the magic for yourself!"
+        },
+        {
+            "id": 6,
+            "estate_title": "Affordable Townhome",
+            "category_name": "Townhouses",
+            "description": "Budget-friendly townhome perfect for first-time buyers or young families.",
+            "price": "$250,000",
+            "status": "sale",
+            "area": "1500 sq ft",
+            "location": "987 Maple Avenue, Anytown",
+            "facilities": [
+                "3 bedrooms",
+                "2 bathrooms",
+                "Community playground"
+            ],
+            "image": "path/to/image14.jpg",
+            "view_details": "Welcome to your charming townhouse! This cozy retreat blends historic charm with modern convenience. Nestled in a vibrant community, this townhouse offers the perfect blend of comfort and style. Step inside and be greeted by a warm and inviting atmosphere, with spacious living areas and stylish finishes throughout. The gourmet kitchen is a chef's dream, complete with stainless steel appliances and granite countertops. Upstairs, you'll find two bedrooms, including a luxurious master suite with a spa-like ensuite bathroom. Outside, the community garden provides a tranquil escape from the hustle and bustle of city life. With easy access to parks, shops, and restaurants, this townhouse offers the best of urban living. Whether you're a first-time buyer or looking to downsize, this townhouse is the perfect place to call home. Don't miss out on the opportunity to make this your own slice of paradise. Schedule a viewing today and experience the magic for yourself!"
+        }
+    ]
+    
+   },
+    {
+        "id":3,
+        "title" : "Apartments",
+        "image":"https://i.ibb.co/Hh8TbXJ/about3.webp",
+        "estate":[
+            {
+                "id": 7,
+                "estate_title": "Downtown Apartment",
+                "category_name": "Apartments",
+                "description": "Luxurious apartment in the heart of the city with panoramic views.",
+                "price": "$2,000/month",
+                "status": "rent",
+                "area": "1000 sq ft",
+                "location": "789 Oak Street, Anytown",
+                "facilities": [
+                    "1 bedroom",
+                    "1 bathroom",
+                    "Fitness center",
+                    "Rooftop terrace"
+                ],
+                "image": "path/to/image3.jpg",
+                "view_details": "Welcome to your urban oasis! This luxurious apartment offers the ultimate in city living. Located in the heart of downtown, this apartment boasts panoramic views of the skyline and easy access to the city's best attractions. Step inside and be greeted by a sleek and modern interior, with high-end finishes and designer touches throughout. The open-concept living space is perfect for entertaining, with a gourmet kitchen and spacious living room. The bedroom is a peaceful retreat, with plush carpeting and a spa-like ensuite bathroom. Outside, the rooftop terrace offers a serene escape from the hustle and bustle of city life, with stunning views of the city below. With amenities like a fitness center, concierge service, and secure parking, this apartment offers the ultimate in convenience and luxury. Whether you're a young professional or empty nester, this apartment is the perfect place to call home. Don't miss out on the opportunity to experience urban living at its finest. Schedule a viewing today and make this apartment your own!"
+            },
+            {
+                "id": 8,
+                "estate_title": "Modern Urban Apartment",
+                "category_name": "Apartments",
+                "description": "Contemporary apartment in a bustling city center, offering convenience and style.",
+                "price": "$2,300/month",
+                "status": "rent",
+                "area": "1100 sq ft",
+                "location": "101 City Street, Anytown",
+                "facilities": [
+                    "2 bedrooms",
+                    "2 bathrooms",
+                    "Balcony with city views"
+                ],
+                "image": "path/to/image13.jpg",
+                "view_details": "Welcome to your urban oasis! This luxurious apartment offers the ultimate in city living. Located in the heart of downtown, this apartment boasts panoramic views of the skyline and easy access to the city's best attractions. Step inside and be greeted by a sleek and modern interior, with high-end finishes and designer touches throughout. The open-concept living space is perfect for entertaining, with a gourmet kitchen and spacious living room. The bedroom is a peaceful retreat, with plush carpeting and a spa-like ensuite bathroom. Outside, the rooftop terrace offers a serene escape from the hustle and bustle of city life, with stunning views of the city below. With amenities like a fitness center, concierge service, and secure parking, this apartment offers the ultimate in convenience and luxury. Whether you're a young professional or empty nester, this apartment is the perfect place to call home. Don't miss out on the opportunity to experience urban living at its finest. Schedule a viewing today and make this apartment your own!"
+            },
+            {
+                "id": 9,
+                "estate_title": "Urban Loft Apartment",
+                "category_name": "Apartments",
+                "description": "Spacious loft-style apartment with exposed brick walls and industrial-chic accents.",
+                "price": "$2,500/month",
+                "status": "rent",
+                "area": "1200 sq ft",
+                "location": "1010 Pine Street, Anytown",
+                "facilities": [
+                    "Open floor plan",
+                    "High ceilings",
+                    "Gourmet kitchen"
+                ],
+                "image": "path/to/image7.jpg",
+                "view_details": "Welcome to your urban oasis! This luxurious apartment offers the ultimate in city living. Located in the heart of downtown, this apartment boasts panoramic views of the skyline and easy access to the city's best attractions. Step inside and be greeted by a sleek and modern interior, with high-end finishes and designer touches throughout. The open-concept living space is perfect for entertaining, with a gourmet kitchen and spacious living room. The bedroom is a peaceful retreat, with plush carpeting and a spa-like ensuite bathroom. Outside, the rooftop terrace offers a serene escape from the hustle and bustle of city life, with stunning views of the city below. With amenities like a fitness center, concierge service, and secure parking, this apartment offers the ultimate in convenience and luxury. Whether you're a young professional or empty nester, this apartment is the perfect place to call home. Don't miss out on the opportunity to experience urban living at its finest. Schedule a viewing today and make this apartment your own!"
+            }
+        ]
+    },
+    {
+        "id":4,
+        "title" : "Student housing",
+        "image":"https://i.ibb.co/Rh5SxhL/about-4.jpg",
+        "estate":[
+            {
+                "id": 8,
+                "estate_title": "Luxury Student Housing",
+                "category_name": "Student housing",
+                "description": "Upscale student housing with resort-style amenities and modern furnishings.",
+                "price": "$1,200/month per room",
+                "status": "rent",
+                "area": "1800 sq ft",
+                "location": "111 University Drive, Anytown",
+                "facilities": [
+                    "Fully furnished rooms",
+                    "Pool and hot tub",
+                    "Fitness center"
+                ],
+                "image": "path/to/image8.jpg",
+                "view_details": "Welcome to your home away from home! This modern student housing complex offers everything you need for a comfortable and convenient living experience. Located just steps from the university campus, this complex boasts spacious apartments, state-of-the-art facilities, and a vibrant community atmosphere. Step inside and be greeted by stylish and modern interiors, with bright and airy living spaces designed for both studying and socializing. The fully furnished rooms offer plenty of space to relax and unwind, while the study lounge provides the perfect environment for hitting the books. With amenities like laundry facilities, secure parking, and on-site maintenance, this complex has everything you need to make the most of your college years. Whether you're a freshman starting your journey or a senior looking for your final home, this student housing complex is the perfect place to thrive. Don't miss out on the opportunity to join this dynamic community. Schedule a viewing today and make this your new home away from home!"
+            },
+            {
+                "id": 9,
+                "estate_title": "Student Housing Complex",
+                "category_name": "Student housing",
+                "description": "Modern student apartments near the university campus.",
+                "price": "$800/month per room",
+                "status": "rent",
+                "area": "1500 sq ft",
+                "location": "101 College Avenue, Anytown",
+                "facilities": [
+                    "Furnished rooms",
+                    "Study lounge",
+                    "Laundry facilities"
+                ],
+                "image": "path/to/image4.jpg",
+                "view_details": "Welcome to your home away from home! This modern student housing complex offers everything you need for a comfortable and convenient living experience. Located just steps from the university campus, this complex boasts spacious apartments, state-of-the-art facilities, and a vibrant community atmosphere. Step inside and be greeted by stylish and modern interiors, with bright and airy living spaces designed for both studying and socializing. The fully furnished rooms offer plenty of space to relax and unwind, while the study lounge provides the perfect environment for hitting the books. With amenities like laundry facilities, secure parking, and on-site maintenance, this complex has everything you need to make the most of your college years. Whether you're a freshman starting your journey or a senior looking for your final home, this student housing complex is the perfect place to thrive. Don't miss out on the opportunity to join this dynamic community. Schedule a viewing today and make this your new home away from home!"
+            },
+            {
+                "id": 10,
+                "estate_title": "Convenient Student Housing",
+                "category_name": "Student housing",
+                "description": "Conveniently located student apartments near campus, offering a comfortable living environment.",
+                "price": "$900/month per room",
+                "status": "rent",
+                "area": "1300 sq ft",
+                "location": "123 University Street, Anytown",
+                "facilities": [
+                    "Furnished rooms",
+                    "Study lounge",
+                    "On-site laundry"
+                ],
+                "image": "path/to/image15.jpg",
+                "view_details": "Welcome to your home away from home! This modern student housing complex offers everything you need for a comfortable and convenient living experience. Located just steps from the university campus, this complex boasts spacious apartments, state-of-the-art facilities, and a vibrant community atmosphere. Step inside and be greeted by stylish and modern interiors, with bright and airy living spaces designed for both studying and socializing. The fully furnished rooms offer plenty of space to relax and unwind, while the study lounge provides the perfect environment for hitting the books. With amenities like laundry facilities, secure parking, and on-site maintenance, this complex has everything you need to make the most of your college years. Whether you're a freshman starting your journey or a senior looking for your final home, this student housing complex is the perfect place to thrive. Don't miss out on the opportunity to join this dynamic community. Schedule a viewing today and make this your new home away from home!"
+            }
+        ]
+    },
+    {
+        "id":5,
+        "title" : "Vacation rentals",
+        "image":"https://i.ibb.co/hDfXF32/about-5.jpg",
+        "estate":[
+            {
+                "id": 11,
+                "estate_title": "Vacation Retreat",
+                "category_name": "Vacation rentals",
+                "description": "Tranquil vacation home nestled in the mountains with breathtaking views and serene surroundings.",
+                "price": "$300/night",
+                "status": "rent",
+                "area": "1800 sq ft",
+                "location": "Mountain View Drive, Anytown",
+                "facilities": [
+                    "3 bedrooms",
+                    "2 bathrooms",
+                    "Hot tub",
+                    "Fireplace"
+                ],
+                "image": "path/to/image9.jpg",
+                "view_details": "Welcome to your tranquil escape! This vacation rental offers a serene retreat from the hustle and bustle of everyday life. Nestled in the mountains, this home boasts breathtaking views and peaceful surroundings, making it the perfect destination for relaxation and rejuvenation. Step inside and be greeted by a cozy and inviting interior, with rustic furnishings and charming accents throughout. The open-concept living space is perfect for gathering with family and friends, with a spacious living room, fully equipped kitchen, and dining area overlooking the scenic landscape. Outside, the expansive deck is the ideal spot for sipping your morning coffee or enjoying a glass of wine as you watch the sun set over the mountains. With three bedrooms, including a luxurious master suite, and two bathrooms, there's plenty of room for everyone to spread out and unwind. And after a day of exploring the great outdoors, the hot tub offers the perfect way to relax and unwind. Whether you're seeking adventure or simply seeking solace, this vacation rental has something for everyone. Don't miss out on the opportunity to experience the magic of mountain living. Book your stay today and make memories that will last a lifetime!"
+            },
+            {
+                "id": 12,
+                "estate_title": "Rustic Cabin Retreat",
+                "category_name": "Vacation rentals",
+                "description": "Cozy cabin nestled in the woods, offering a peaceful escape from city life.",
+                "price": "$200/night",
+                "status": "rent",
+                "area": "1200 sq ft",
+                "location": "Forest Road, Anytown",
+                "facilities": [
+                    "2 bedrooms",
+                    "1 bathroom",
+                    "Wood-burning fireplace",
+                    "Deck with forest views"
+                ],
+                "image": "path/to/image10.jpg",
+                "view_details": "Welcome to your tranquil escape! This vacation rental offers a serene retreat from the hustle and bustle of everyday life. Nestled in the mountains, this home boasts breathtaking views and peaceful surroundings, making it the perfect destination for relaxation and rejuvenation. Step inside and be greeted by a cozy and inviting interior, with rustic furnishings and charming accents throughout. The open-concept living space is perfect for gathering with family and friends, with a spacious living room, fully equipped kitchen, and dining area overlooking the scenic landscape. Outside, the expansive deck is the ideal spot for sipping your morning coffee or enjoying a glass of wine as you watch the sun set over the mountains. With three bedrooms, including a luxurious master suite, and two bathrooms, there's plenty of room for everyone to spread out and unwind. And after a day of exploring the great outdoors, the hot tub offers the perfect way to relax and unwind. Whether you're seeking adventure or simply seeking solace, this vacation rental has something for everyone. Don't miss out on the opportunity to experience the magic of mountain living. Book your stay today and make memories that will last a lifetime!"
+            }
+        ]
+    }
+]
