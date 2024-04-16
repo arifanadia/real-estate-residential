@@ -1,11 +1,14 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import SocialLogin from "../SocialLogin/SocialLogin";
+
+
 
 
 
 const Login = () => {
-    const {createUser} = useContext(AuthContext)
+    const {logIn} = useContext(AuthContext)
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -14,13 +17,15 @@ const Login = () => {
         const password = form.get('password');
         console.log(email, password);
 
-        createUser(email,password)
+        logIn(email,password)
          .then(result => {
-            console.log(result.user);
+            console.log(result);
          })
-         .catch(error =>{
+         .catch(error => {
             console.error(error);
          })
+
+     
     }
     return (
         <div className=" bg-navyBlue mt-10 max-w-5xl mx-auto rounded-lg py-6 shadow-2xl">
@@ -46,7 +51,16 @@ const Login = () => {
                 <div className="form-control mt-6">
                     <button className="btn bg-skyBlue text-white">Login</button>
                 </div>
+                <div className="flex items-center justify-center gap-3 mt-4">
+                    <hr className="w-32" />
+                    <p className="text-white text-xl  text-center">or connect with</p>
+                    <hr className="w-32" />
+                </div>
+                <SocialLogin></SocialLogin>
+              
+                
             </form>
+      
         </div>
     );
 };
