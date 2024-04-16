@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import CategoriesItem from "../Pages/CategoriesItem/CategoriesItem";
 import ItemDetails from "../Pages/ItemDetails/ItemDetails";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
             },
             {
                 path:"/categories/:id",
-                element:<CategoriesItem></CategoriesItem>
+                element:<PrivateRoutes><CategoriesItem></CategoriesItem></PrivateRoutes>
             },
             {
                 path:"/categoriesItem/:id",

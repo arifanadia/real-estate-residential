@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { FiEye, FiEyeOff } from "react-icons/fi";
@@ -10,7 +10,10 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const Login = () => {
     const {logIn} = useContext(AuthContext);
-    const [showPassword, setShowPassword] = useState(false)
+    const [showPassword, setShowPassword] = useState(false);
+    const location =useLocation();
+    const navigate = useNavigate()
+    console.log("login",location);
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -22,6 +25,8 @@ const Login = () => {
         logIn(email,password)
          .then(result => {
             console.log(result);
+
+            navigate(location?.state ? location.state : "/")
          })
          .catch(error => {
             console.error(error);

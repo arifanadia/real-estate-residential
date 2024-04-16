@@ -29,7 +29,7 @@ const Header = () => {
 
     </>
     return (
-        <nav className="flex justify-between items-center bg-[#f1f2f6]  text-skyBlue p-4  sticky">
+        <nav className="flex justify-between items-center bg-[#f1f2f6]  text-skyBlue p-4 z-10  sticky">
             <div className="md:hidden text-xl" onClick={() => setOpen(!open)} >
                 {
                     open === true ?
@@ -60,17 +60,14 @@ const Header = () => {
                         (
                             <> <div className="dropdown dropdown-end">
                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                                    <div className="w-10 rounded-full">
-                                        <img alt="profile" src={profile} />
+                                    <div className="w-14 bg-navyBlue rounded-full">
+                                        <img alt="profile" src={user ? user?.photoURL : {profile}} />
                                     </div>
                                 </div>
-                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                    <li>
-                                        <a className="justify-between">
-                                            Profile
-                                            <span className="badge">New</span>
-                                        </a>
-                                    </li>
+                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[2] px-4 shadow bg-base-100 rounded-box w-60 h-60">
+                                    <li className=" mx-auto"> <a>{user?.displayName} </a></li>
+                                    <li  className="mx-auto"> <a>{user?.email} </a></li> 
+                                    <hr className=" my-2" />   
                                     <li><a>Settings</a></li>
                                     <li onClick={handleSignOut}><a>Logout</a></li>
                                 </ul>
