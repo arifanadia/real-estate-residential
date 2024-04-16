@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
@@ -53,6 +54,9 @@ const Register = () => {
     }
     return (
         <div className=" bg-navyBlue mt-10 max-w-5xl mx-auto rounded-lg py-6 shadow-2xl">
+              <Helmet>
+                <title>CozyHome | Register</title>
+            </Helmet>
             <h2 className="text-center text-6xl text-skyBlue font-bold">Register</h2>
 
             <form onSubmit={handleRegister} className="card-body md:w-3/4 lg:w-1/2 mx-auto">

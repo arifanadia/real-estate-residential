@@ -4,6 +4,7 @@ import UseCategoriesData from "../../Hooks/UseCategoriesData";
 import DetailSwiper from "../../Components/DetailSwiper/DetailSwiper";
 import { TfiLocationPin } from "react-icons/tfi";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
+import { Helmet } from "react-helmet-async";
 const ItemDetails = () => {
 
     const [estateDetails, setEstateDetails] = useState({})
@@ -27,6 +28,9 @@ const ItemDetails = () => {
             = estateDetails || {}
     return (
         <div>
+              <Helmet>
+                <title>CozyHome | Property Featured</title>
+            </Helmet>
             <DetailSwiper></DetailSwiper>
             <div className="max-w-7xl mx-auto">
                 <h1 className="mt-10 text-4xl font-semibold text-navyBlue">{estate_title}</h1>

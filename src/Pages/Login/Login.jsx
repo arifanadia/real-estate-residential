@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -35,7 +36,11 @@ const Login = () => {
      
     }
     return (
+        
         <div className=" bg-navyBlue mt-10 max-w-5xl mx-auto rounded-lg py-6 shadow-2xl">
+             <Helmet>
+                <title>CozyHome|login</title>
+            </Helmet>
             <h2 className="text-center text-6xl text-skyBlue font-bold">LogIn</h2>
 
             <form onSubmit={handleLogin} className="card-body md:w-3/4 lg:w-1/2 mx-auto">
