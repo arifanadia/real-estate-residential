@@ -1,10 +1,21 @@
 import { createContext, useEffect, useState } from "react";
-import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signOut, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    onAuthStateChanged,
+    signOut,
+    signInWithEmailAndPassword,
+    signInWithPopup,
+    GoogleAuthProvider,
+    GithubAuthProvider
+} from "firebase/auth";
 import app from "../Firebase/Firebase.config";
 
 import PropTypes from 'prop-types';
 
 export const AuthContext = createContext(null);
+const googleProvider = new GoogleAuthProvider()
+const gitHubProvider = new GithubAuthProvider()
 
 const auth = getAuth(app);
 
@@ -31,13 +42,16 @@ const AuthProvider = ({ children }) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
-    const logIn = (email,password) => {
+    const logIn = (email, password) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
-    const googleLogIn = (provider) => {
-        return signInWithPopup(auth, provider)
+    const googleLogIn = () => {
+        return signInWithPopup(auth, googleProvider)
     }
-    const authInfo = { user, createUser,logIn,googleLogIn, logOut }
+    const githubLogin = () => {
+        return signInWithPopup(auth, gitHubProvider)
+    }
+    const authInfo = { user, createUser, logIn, googleLogIn,githubLogin, logOut }
 
     return (
         <AuthContext.Provider value={authInfo}>
@@ -47,8 +61,8 @@ const AuthProvider = ({ children }) => {
 };
 
 AuthProvider.propTypes = {
-    children : PropTypes.object.isRequired
-    
+    children: PropTypes.object.isRequired
+
 };
 
 export default AuthProvider;

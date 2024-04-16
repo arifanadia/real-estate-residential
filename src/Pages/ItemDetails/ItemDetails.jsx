@@ -12,11 +12,12 @@ const ItemDetails = () => {
     const { categoriesData } = UseCategoriesData()
     useEffect(() => {
         if (categoriesData) {
-            const categoryItems = categoriesData.find(item => item.id == id);
-            if (categoryItems) {
-                const estate = categoryItems.estates.find(estate => estate.id == id);
-                setEstateDetails(estate)
+            for (const category of categoriesData) {
+                const estate = category.estates.find(estate => estate.id == id);
+                if (estate) {
 
+                    setEstateDetails(estate)
+                }
             }
         }
     }, [categoriesData, id])
@@ -68,16 +69,20 @@ const ItemDetails = () => {
                         <div className="bg-slate-50 rounded-lg p-6 mt-6 shadow-xl">
                             <h4 className="text-navyBlue text-xl font-semibold"> Facilities</h4>
                             <hr className="border border-skyBlue w-52 my-2" />
-                            <span className="flex text-white gap-8 mt-4">
-                                {
-                                    facilities.map((facility, index) =>
-                                        <p key={index}
-                                            className="flex gap-2 bg-navyBlue rounded-xl text-lg px-10 py-4 items-center">
-                                            <IoCheckmarkCircleSharp className="text-skyBlue"></IoCheckmarkCircleSharp>
-                                            {facility}
-                                        </p>)
-                                }
-                            </span>
+                            {
+                                facilities ? (
+                                    <span className="flex text-white gap-8 mt-4">
+                                        {
+                                            facilities.map((facility, index) =>
+                                                <p key={index}
+                                                    className="flex gap-2 bg-navyBlue rounded-xl text-lg px-10 py-4 items-center">
+                                                    <IoCheckmarkCircleSharp className="text-skyBlue"></IoCheckmarkCircleSharp>
+                                                    {facility}
+                                                </p>)
+                                        }
+                                    </span>
+                                ) : null
+                            }
 
 
                         </div>

@@ -53,14 +53,31 @@ const Header = () => {
                 </div>
             </Link>
             <div className="flex items-center gap-2">
-                <div tabIndex={0} role="button" className="btn btn-ghost border-2 border-skyBlue btn-circle avatar">
-                    <div className="w-10 rounded-full">
-                        <img src={profile} alt="profile" />
-                    </div>
-                </div>
+
                 {
                     user ?
-                        <button onClick={handleSignOut} className="bg-skyBlue text-white font-semibold lg:text-xl px-6 p-3 rounded-lg ">LogOut</button>
+
+                        (
+                            <> <div className="dropdown dropdown-end">
+                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full">
+                                        <img alt="profile" src={profile} />
+                                    </div>
+                                </div>
+                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li>
+                                        <a className="justify-between">
+                                            Profile
+                                            <span className="badge">New</span>
+                                        </a>
+                                    </li>
+                                    <li><a>Settings</a></li>
+                                    <li onClick={handleSignOut}><a>Logout</a></li>
+                                </ul>
+                            </div>
+
+
+                            </>)
                         :
                         <Link to={`/login`}>
                             <button className="bg-skyBlue text-white font-semibold lg:text-xl px-6 p-3 rounded-lg ">LogIn</button>
@@ -70,7 +87,7 @@ const Header = () => {
 
             </div>
 
-        </nav>
+        </nav >
     );
 };
 

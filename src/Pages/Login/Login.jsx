@@ -1,14 +1,16 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 
 
 
 
 const Login = () => {
-    const {logIn} = useContext(AuthContext)
+    const {logIn} = useContext(AuthContext);
+    const [showPassword, setShowPassword] = useState(false)
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -42,7 +44,19 @@ const Login = () => {
                     <label className="label">
                         <span className="label-text text-white">Password</span>
                     </label>
-                    <input type="password" placeholder="Password" name="password" className="input input-bordered" required />
+                    <div className="relative">
+                        <input
+                            type={showPassword ? "text" : "password"}
+                            placeholder="Password"
+                            name="password"
+                            className="input w-full input-bordered relative" required />
+                        <span className="absolute right-3 top-4"
+                            onClick={() => setShowPassword(!showPassword)}>
+                            {
+                                showPassword ? <FiEyeOff /> : <FiEye />
+                            }
+                        </span>
+                    </div>
                     <label className="label">
                         <a href="#" className="label-text-alt link link-hover text-white">Forgot password?</a>
                     </label>
@@ -56,10 +70,8 @@ const Login = () => {
                     <p className="text-white text-xl  text-center">or connect with</p>
                     <hr className="w-32" />
                 </div>
-                <SocialLogin></SocialLogin>
-              
-                
             </form>
+            <SocialLogin></SocialLogin>
       
         </div>
     );
