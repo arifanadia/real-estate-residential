@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext)
+    const { createUser,updateUserProfile} = useContext(AuthContext)
     const [registerError, setRegisterError] = useState('');
     const [showPassword, setShowPassword] = useState(false)
 
@@ -43,10 +42,7 @@ const Register = () => {
                 console.log(result.user)
                 toast.success("User Created Successfully")
 
-                updateProfile(result.user, {
-                    displayName: name,
-                    photoURL:photo
-                })
+                updateUserProfile(name,photo)
                 .then(() => console.log("profile updated"))
                 .catch()
             })

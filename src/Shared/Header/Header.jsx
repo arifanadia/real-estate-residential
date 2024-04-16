@@ -61,11 +61,11 @@ const Header = () => {
                             <> <div className="dropdown dropdown-end">
                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                     <div className="w-14 bg-navyBlue rounded-full">
-                                        <img alt="profile" src={user ? user?.photoURL : {profile}} />
+                                        <img alt="profile" src={user?.photoURL || {profile}} />
                                     </div>
                                 </div>
                                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[2] px-4 shadow bg-base-100 rounded-box w-60 h-60">
-                                    <li className=" mx-auto"> <a>{user?.displayName} </a></li>
+                                    <li className=" mx-auto"> <a>{user?.displayName || "username not found"} </a></li>
                                     <li  className="mx-auto"> <a>{user?.email} </a></li> 
                                     <hr className=" my-2" />   
                                     <li><a>Settings</a></li>

@@ -18,7 +18,9 @@ const PropertyCategory = () => {
                 </div>
                 <p className="text-gray-700 mx-auto w-3/5">Property Category means each of Land Held for Development, Commercial Land, Lots Under Development, Finished Lots, Model Housing Units, Presold Housing Units and Speculative Housing Units.</p>
             </div>
-            <div className="grid grid-cols-3 gap-4 max-w-7xl mx-auto mt-12">
+            <div className="grid grid-cols-3  gap-4 max-w-7xl mx-auto mt-12"
+             data-aos="zoom-out-right"
+             data-aos-duration="2000">
                 {
                     categoriesData.map(categories =>
                         <Categories
