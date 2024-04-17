@@ -10,7 +10,7 @@ const Items = ({ estate }) => {
             <div className="flex bg-slate-50 shadow-xl rounded-xl gap-4">
 
                 <div className='relative'>
-                    <img className='rounded-xl w-[350px] h-[230px]  ' src={estate_image} alt="Album" />
+                    <img className='animate__animated duration-2000 hover:animate__heartBeat repeat-infinite rounded-xl w-[350px] h-[230px]  ' src={estate_image} alt="Album" />
                     <span className='bg-navyBlue px-3 p-1 top-1 rounded-2xl absolute'>
                         <p className='text-white'>{status}</p></span>
                 </div>

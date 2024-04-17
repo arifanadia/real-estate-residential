@@ -39,7 +39,7 @@ const Login = () => {
         
         <div className=" bg-navyBlue mt-10 max-w-5xl mx-auto rounded-lg py-6 shadow-2xl">
              <Helmet>
-                <title>CozyHome|login</title>
+                <title>CozyHome | Login</title>
             </Helmet>
             <h2 className="text-center text-6xl text-skyBlue font-bold">LogIn</h2>
 
