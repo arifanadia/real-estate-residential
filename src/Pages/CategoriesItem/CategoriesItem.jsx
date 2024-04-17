@@ -30,7 +30,7 @@ const CategoriesItem = () => {
                 style={{ backgroundImage: `linear-gradient(#2193b0CC, #4286f459 ), url(${category})` }}
             > <h1 className="text-center text-5xl text-navyBlue font-bold">{category_name}</h1>
             </div>
-            <div className="grid grid-cols-3 max-w-7xl mx-auto gap-8 mt-14">
+            <div className="lg:grid grid-cols-3 max-w-7xl mx-4 lg:mx-auto gap-8 mt-14">
 
                 <div className="col-span-2 space-y-5">
                     {

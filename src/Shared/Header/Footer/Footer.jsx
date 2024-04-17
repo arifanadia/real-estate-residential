@@ -10,9 +10,9 @@ const Footer = () => {
     return (
         <div className="mt-40">
 
-            <footer className="bg-no-repeat relative bg-cover bg-center flex gap-32 justify-center px-10 py-16"
+            <footer className="bg-no-repeat relative bg-cover bg-center grid lg:grid-cols-5 grid-cols-2 md:gap-16 justify-center px-20 py-16"
                 style={{ backgroundImage: `linear-gradient(#27187eD6, #003973A8 ),url(${footerBg})` }}>
-                <aside>
+                <aside className="col-span-2 md:col-span-1 lg:col-span-2 mt-12 md:mt-0">
                     <Link to={`/`}>
                         <div className="flex text-left items-center bg-navyBlue pr-4 bg-opacity-35 rounded-xl w-44">
                             <img className="lg:w-[80px] w-[30px]" src={logo} alt="" />
@@ -32,8 +32,8 @@ const Footer = () => {
                     </span>
 
                 </aside>
-                <div className="mt-10 flex gap-28">
-                    <nav className="text-white">
+      
+                    <nav className="text-white mt-6 md:mt-0 lg:mt-6">
                         <h6 className="font-semibold text-xl">General info</h6>
                         <ul>
                             <NavLink to={"/"}><li className="flex items-center gap-2 mt-2" >
@@ -56,7 +56,7 @@ const Footer = () => {
                                 </BsArrowRightShort>Blog</li></NavLink>
                         </ul>
                     </nav>
-                    <nav className="text-white">
+                    <nav className="text-white mt-6">
                         <h6 className="font-semibold text-xl">Quick Links</h6>
                         <ul>
                             <NavLink to={"/"}><li className="flex items-center gap-2 mt-2" >
@@ -79,7 +79,7 @@ const Footer = () => {
                                 </BsArrowRightShort>Blog</li></NavLink>
                         </ul>
                     </nav>
-                    <nav className="text-white">
+                    <nav className="text-white mt-6">
                         <h6 className="font-semibold text-xl">Contacts</h6>
                         <ul className="">
                             <NavLink to={"/"}><li className="flex items-center gap-2 mt-2" >
@@ -102,22 +102,22 @@ const Footer = () => {
                                 </MdLocationCity>Sylhet,Bangladesh</li></NavLink>
                         </ul>
                     </nav>
-                </div>
-                <div className="bg-navyBlue flex rounded-xl absolute px-10 py-10 gap-8 -top-24 "
+             
+                <div className="bg-navyBlue md:flex text-center lg:text-left  shadow-xl rounded-xl absolute md:px-6 md:left-4 left-6 px-4  lg:px-10 py-10 gap-8 lg:left-[15%] -top-24 "
                  data-aos="fade-in"
                  data-aos-duration='2000'
                  data-aos-delay="500">
                     <div>
                         <h2
-                            className="font-bold text-4xl text-white">
+                            className="font-bold text-2xl lg:text-4xl text-white">
                             Subscribe Our Newsletter</h2>
-                        <p className="text-xl text-white">
+                        <p className="lg:text-xl text-white">
                             Join our email subscription now to get updates and notifications.</p>
                     </div>
-                    <div className="relative ">
+                    <div className="relative mt-4 md:mt-0 ">
                         <input type="email" name="" placeholder="Your Email Address" id=""
                             className="px-6 w-[350px] py-3 rounded-lg " />
-                        <button className="text-white bg-skyBlue px-6 py-2 rounded-lg absolute right-1 top-1">Sign Up</button>
+                        <button className="text-white bg-skyBlue px-6 py-2 rounded-lg absolute right-14  md:right-1 top-1">Sign Up</button>
                     </div>
                 </div>
 

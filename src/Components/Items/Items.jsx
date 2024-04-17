@@ -19,10 +19,10 @@ const Items = ({ estate }) => {
                     <h2 className="text-xl font-bold">{estate_title}</h2>
                     <p className='font-medium mt-1'>{description}</p>
                     <p className='mt-3 flex items-center gap-2'><TfiLocationPin className='text-skyBlue'></TfiLocationPin>{location}</p>
-                    <div className='my-2 flex gap-4'>
+                    <div className='my-2 md:flex gap-4'>
                         <p className='border-2 border-dashed border-skyBlue p-2 '>
                             <span className='font-bold'>Area</span> : {area}</p>
-                        <p className='border-2 border-dashed border-skyBlue p-2 '>
+                        <p className='border-2 border-dashed border-skyBlue p-2 mt-4 md:mt-0 '>
                             <span className='font-bold'>Price</span>: {price}</p>
                     </div>
                     <div className="card-actions justify-end">

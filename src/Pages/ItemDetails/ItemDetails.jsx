@@ -32,10 +32,10 @@ const ItemDetails = () => {
                 <title>CozyHome | Property Featured</title>
             </Helmet>
             <DetailSwiper></DetailSwiper>
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl lg:mx-auto mx-6">
                 <h1 className="mt-10 text-4xl font-semibold text-navyBlue">{estate_title}</h1>
                 <p className='mt-3 text-navyBlue flex items-center gap-2'><TfiLocationPin className='text-skyBlue'></TfiLocationPin>{location}</p>
-                <div className="grid grid-cols-3 my-8 gap-8 ">
+                <div className="lg:grid grid-cols-3 my-8 gap-8 ">
                     <div className="bg-slate-50 rounded-lg">
 
                         <h1>listed properties</h1>

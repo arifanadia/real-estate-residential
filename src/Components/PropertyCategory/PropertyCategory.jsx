@@ -7,7 +7,7 @@ const PropertyCategory = () => {
 
     const { categoriesData } = UseCategoriesData()
     return (
-        <div className="my-28">
+        <div className="my-28 mx-4">
             <div className="text-center">
                 <h2 className="font-openSans font-bold text-4xl ">Properties By Category</h2>
                 <div className="flex justify-center items-center gap-2 my-6">
@@ -18,7 +18,7 @@ const PropertyCategory = () => {
                 </div>
                 <p className="text-gray-700 mx-auto w-3/5">Property Category means each of Land Held for Development, Commercial Land, Lots Under Development, Finished Lots, Model Housing Units, Presold Housing Units and Speculative Housing Units.</p>
             </div>
-            <div className="grid grid-cols-3  gap-4 max-w-7xl mx-auto mt-12"
+            <div className="md:grid lg:grid-cols-3 md:grid-cols-2  gap-4 max-w-7xl mx-auto mt-12"
                 data-aos="fade-left"
                 data-aos-duration="2000">
                 {
