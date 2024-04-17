@@ -24,6 +24,10 @@ const Header = () => {
         <NavLink to={"/listing"}><li>Listing</li></NavLink>
         <NavLink to={"/about"}><li>About</li></NavLink>
         <NavLink to={"/blog"}><li>Blog</li></NavLink>
+        { user ? <NavLink to={"/updatprofile"}><li>Update Profile</li></NavLink> :null
+
+        }
+        
 
 
 
@@ -60,7 +64,7 @@ const Header = () => {
                         (
                             <> <div className="dropdown dropdown-end">
                                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                                    <div className="w-14 bg-navyBlue rounded-full">
+                                    <div className="w-14 bg-navyBlue rounded-full ">
                                         <img alt="profile" src={user?.photoURL || {profile}} />
                                     </div>
                                 </div>
