@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
 import { FiEye, FiEyeOff } from "react-icons/fi";
@@ -11,6 +11,8 @@ const Register = () => {
     const { createUser,updateUserProfile} = useContext(AuthContext)
     const [registerError, setRegisterError] = useState('');
     const [showPassword, setShowPassword] = useState(false)
+    const location =useLocation();
+    const navigate = useNavigate()
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -41,6 +43,7 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
+                navigate(location?.state ? location.state : "/")
                 toast.success("User Created Successfully")
 
                 updateUserProfile(name,photo)
