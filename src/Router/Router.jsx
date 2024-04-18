@@ -10,6 +10,8 @@ import ItemDetails from "../Pages/ItemDetails/ItemDetails";
 import PrivateRoutes from "./PrivateRoutes";
 import About from "../Pages/About/About";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import FeaturedProperties from "../Pages/FeaturedProperties/FeaturedProperties";
+import Blog from "../Pages/Blog/Blog";
 
 const router = createBrowserRouter([
     {
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
             {
                 path:"/categoriesItem/:id",
                 element:<ItemDetails></ItemDetails>
+            },
+            {
+                path:"/listing",
+                element:<FeaturedProperties></FeaturedProperties>
+            },
+            {
+                path:"/blog",
+                element:<Blog></Blog>
             },
          
 

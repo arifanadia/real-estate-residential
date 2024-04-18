@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async"
 import aboutPage from "../../assets/aboutpage.jpeg"
 import aboutPage2 from "../../assets/aboutpage2.webp"
 import aboutPage3 from "../../assets/footerbg.jpg"
@@ -9,6 +10,9 @@ import team3 from "../../assets/team3.jpg"
 const About = () => {
     return (
         <div className="max-w-7xl lg:mx-auto mx-4 mb-80">
+            <Helmet>
+                <title>CozyHome | About</title>
+            </Helmet>
             <div className="p-32 bg-no-repeat bg-cover bg-center"
                 style={{ backgroundImage: `linear-gradient(#211f2fCC, #918ca926 ), url(${aboutPage})` }}
             > <h1 className="text-center text-5xl text-white font-bold font-galada">About Us</h1>
