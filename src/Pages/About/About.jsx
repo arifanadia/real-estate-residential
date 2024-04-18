@@ -44,9 +44,9 @@ const About = () => {
                     <hr className="border border-dashed border-navyBlue w-60" />
                 </div>
                 <div className="lg:grid lg:grid-cols-3 gap-6 my-10 mx-auto ">
-                    <div className=" h-[450px] mt-28  md:mt-0 mx-auto ">
-                        <img className="w-[450px] h-[450px] mx-auto  rounded-t-xl" src={team1} alt="" />
-                        <div className='bg-slate-300 p-4 w-[450px] mx-auto '
+                     <div className="h-[450px] mt-28 md:mt-36 ">
+                        <img className="w-[450px] h-[450px] rounded-t-xl mx-auto " src={team1} alt="" />
+                        <div className='bg-slate-300 p-4 md:w-[450px] mx-auto '
                             data-aos="fade-right"
                             data-aos-duration="2500">
                             <h2 className="text-2xl text-center text-navyBlue font-bold">Jhon Doe</h2>
@@ -55,7 +55,7 @@ const About = () => {
                     </div>
                     <div className="h-[450px] mt-28 md:mt-36 ">
                         <img className="w-[450px] h-[450px] rounded-t-xl mx-auto " src={team2} alt="" />
-                        <div className='bg-slate-300 p-4 w-[450px] mx-auto '
+                        <div className='bg-slate-300 p-4 md:w-[450px] mx-auto '
                             data-aos="fade-right"
                             data-aos-duration="2500">
                             <h2 className="text-2xl text-center text-navyBlue font-bold">Jhon Doe</h2>
@@ -64,7 +64,7 @@ const About = () => {
                     </div>
                     <div className="h-[450px] mt-28 md:mt-36 ">
                         <img className="w-[450px] h-[450px] rounded-t-xl mx-auto " src={team3} alt="" />
-                        <div className='bg-slate-300 p-4 w-[450px] mx-auto  '
+                        <div className='bg-slate-300 p-4 md:w-[450px]  mx-auto  '
                             data-aos="fade-right"
                             data-aos-duration="2500">
                             <h2 className="text-2xl text-center text-navyBlue font-bold">Jhon Doe</h2>
