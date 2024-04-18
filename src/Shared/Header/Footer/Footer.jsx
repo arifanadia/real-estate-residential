@@ -103,7 +103,7 @@ const Footer = () => {
                         </ul>
                     </nav>
              
-                <div className="bg-navyBlue md:flex text-center lg:text-left  shadow-xl rounded-xl absolute md:px-6 md:left-4 left-6 px-4  lg:px-10 py-10 gap-8 lg:left-[15%] -top-24 "
+                <div className="bg-navyBlue md:flex text-center lg:text-left  shadow-xl rounded-xl absolute md:px-6 md:left-4 left-16 px-4  lg:px-10 py-10 gap-8 lg:left-[15%] -top-24 "
                  data-aos="fade-in"
                  data-aos-duration='2000'
                  data-aos-delay="500">

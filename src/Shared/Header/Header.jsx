@@ -24,6 +24,7 @@ const Header = () => {
         <NavLink to={"/listing"}><li>Listing</li></NavLink>
         <NavLink to={"/about"}><li>About</li></NavLink>
         <NavLink to={"/blog"}><li>Blog</li></NavLink>
+        <NavLink className={"lg:hidden md:hidden"} to={"/update-profile"}><li>Update Profile</li></NavLink> 
       
 
         
@@ -58,7 +59,7 @@ const Header = () => {
             </Link>
           </div>
             <div className="flex w-1/3 justify-end items-center gap-2 ">
-                <ul className="mr-6 font-semibold lg:text-xl font-openSans text-skyBlue">
+                <ul className="mr-6 hidden md:block lg:block font-semibold lg:text-xl font-openSans text-skyBlue">
                 <NavLink to={"/update-profile"}><li>Update Profile</li></NavLink> 
                 </ul>
 

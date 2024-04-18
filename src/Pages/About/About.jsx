@@ -8,13 +8,13 @@ import team3 from "../../assets/team3.jpg"
 
 const About = () => {
     return (
-        <div className="max-w-7xl mx-auto mb-80">
+        <div className="max-w-7xl lg:mx-auto mx-4 mb-80">
             <div className="p-32 bg-no-repeat bg-cover bg-center"
                 style={{ backgroundImage: `linear-gradient(#211f2fCC, #918ca926 ), url(${aboutPage})` }}
             > <h1 className="text-center text-5xl text-white font-bold font-galada">About Us</h1>
             </div>
 
-            <div className="flex items-center justify-between mt-10 gap-8">
+            <div className="lg:flex items-center justify-between mt-10 gap-8">
                 <div>
                     <h1 className="text-2xl font-semibold text-navyBlue">Our Story</h1>
                     <hr className="w-28 border-navyBlue border my-2 border-dashed" />
@@ -23,7 +23,7 @@ const About = () => {
                         What sets us apart is our unwavering dedication to client satisfaction. We believe that every client deserves to feel valued and empowered throughout their real estate journey, whether they are buying, selling, or renting a property. By prioritizing open communication, honesty, and responsiveness, we strive to exceed our clients expectations at every turn <br /> <br />
                         As we look to the future, our commitment to innovation and excellence remains steadfast. We are excited to continue growing, evolving, and finding new ways to enhance the real estate experience for our clients. Whether you are searching for your dream home or looking to sell your property, we invite you to join us on this journey and experience the Cozy Homes difference for yourself.</p>
                 </div>
-                <div className="grid grid-rows-2">
+                <div className="grid grid-rows-2 ">
                     <div className="px-72 rounded-xl bg-no-repeat bg-cover bg-center "
                         style={{ backgroundImage: `linear-gradient(#211f2fCC, #918ca926 ), url(${aboutPage3})` }}>
 
@@ -43,28 +43,28 @@ const About = () => {
                     </div>
                     <hr className="border border-dashed border-navyBlue w-60" />
                 </div>
-                <div className="grid grid-cols-3 gap-6 my-10">
-                    <div className="bg-navyBlue h-[400px] rounded-xl  ">
-                        <img className="h-[450px] rounded-t-xl" src={team1} alt="" />
-                        <div className='bg-slate-300 p-4'
+                <div className="lg:grid lg:grid-cols-3 gap-6 my-10 mx-auto ">
+                    <div className=" h-[450px] mt-28  md:mt-0 mx-auto ">
+                        <img className="w-[450px] h-[450px] mx-auto  rounded-t-xl" src={team1} alt="" />
+                        <div className='bg-slate-300 p-4 w-[450px] mx-auto '
                             data-aos="fade-right"
                             data-aos-duration="2500">
                             <h2 className="text-2xl text-center text-navyBlue font-bold">Jhon Doe</h2>
                             <p className="text-center">Agent</p>
                         </div>
                     </div>
-                    <div className="bg-navyBlue h-[450px] rounded-xl">
-                        <img className="h-[450px] rounded-t-xl" src={team2} alt="" />
-                        <div className='bg-slate-300 p-4'
+                    <div className="h-[450px] mt-28 md:mt-36 ">
+                        <img className="w-[450px] h-[450px] rounded-t-xl mx-auto " src={team2} alt="" />
+                        <div className='bg-slate-300 p-4 w-[450px] mx-auto '
                             data-aos="fade-right"
                             data-aos-duration="2500">
                             <h2 className="text-2xl text-center text-navyBlue font-bold">Jhon Doe</h2>
                             <p className="text-center">Agent</p>
                         </div>
                     </div>
-                    <div className="bg-navyBlue h-[450px] rounded-xl ">
-                        <img className="h-[450px] rounded-t-xl" src={team3} alt="" />
-                        <div className='bg-slate-300 p-4'
+                    <div className="h-[450px] mt-28 md:mt-36 ">
+                        <img className="w-[450px] h-[450px] rounded-t-xl mx-auto " src={team3} alt="" />
+                        <div className='bg-slate-300 p-4 w-[450px] mx-auto  '
                             data-aos="fade-right"
                             data-aos-duration="2500">
                             <h2 className="text-2xl text-center text-navyBlue font-bold">Jhon Doe</h2>
