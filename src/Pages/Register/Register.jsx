@@ -57,7 +57,7 @@ const Register = () => {
               <Helmet>
                 <title>CozyHome | Register</title>
             </Helmet>
-            <h2 className="text-center text-6xl text-skyBlue font-bold">Register</h2>
+            <h2 className="text-center mt-10 text-4xl text-white font-bold">Please Register</h2>
 
             <form onSubmit={handleRegister} className="card-body md:w-3/4 lg:w-1/2 mx-auto">
                 <div className="form-control">
@@ -106,7 +106,7 @@ const Register = () => {
                 </div>
             </form>
             {
-                registerError && <p className="text-white text-center">{registerError}</p>
+                registerError && <p className="text-red-600 text-center">{registerError}</p>
             }
         </div>
     );

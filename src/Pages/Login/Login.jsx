@@ -41,7 +41,7 @@ const Login = () => {
              <Helmet>
                 <title>CozyHome | Login</title>
             </Helmet>
-            <h2 className="text-center text-6xl text-skyBlue font-bold">LogIn</h2>
+            <h2 className="text-center mt-10 text-4xl text-skyBlue font-bold">Please LogIn</h2>
 
             <form onSubmit={handleLogin} className="card-body md:w-3/4 lg:w-1/2 mx-auto">
                 <div className="form-control">

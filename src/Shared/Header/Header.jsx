@@ -9,7 +9,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext)
-    console.log(user);
+    // console.log(user);
 
     const handleSignOut = () => {
         logOut()
@@ -24,9 +24,8 @@ const Header = () => {
         <NavLink to={"/listing"}><li>Listing</li></NavLink>
         <NavLink to={"/about"}><li>About</li></NavLink>
         <NavLink to={"/blog"}><li>Blog</li></NavLink>
-        { user ? <NavLink to={"/updatprofile"}><li>Update Profile</li></NavLink> :null
+      
 
-        }
         
 
 
@@ -43,20 +42,25 @@ const Header = () => {
                 }
 
             </div>
-            <div>
+            <div className="w-1/3 flex justify-start">
                 <ul className={`md:flex absolute md:static bg-[#f1f2f6] font-semibold duration-1000 px-6 py-4 ${open ? 'top-16' : '-top-60'} gap-5 lg:text-xl font-openSans`}>
                     {navLinks}
 
                 </ul>
             </div>
-            <Link to={`/`}>
-                <div className="flex items-center">
+          <div className="w-1/3 ">
+          <Link to={`/`}>
+                <div className="flex justify-center items-center ">
                     <h2 className="font-galada text-navyBlue text-3xl lg:text-5xl">Cozy <br />
                         <span className="text-[#319ff6]">Home</span></h2>
                     <img className="lg:w-[110px] w-[50px]" src={logo} alt="" />
                 </div>
             </Link>
-            <div className="flex items-center gap-2">
+          </div>
+            <div className="flex w-1/3 justify-end items-center gap-2 ">
+                <ul className="mr-6 font-semibold lg:text-xl font-openSans text-skyBlue">
+                <NavLink to={"/update-profile"}><li>Update Profile</li></NavLink> 
+                </ul>
 
                 {
                     user ?

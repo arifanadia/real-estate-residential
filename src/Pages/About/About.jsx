@@ -1,9 +1,9 @@
-
+import aboutPage from "../../assets/aboutpage.jpg"
 
 const About = () => {
     return (
         <div>
-            <h1>this is about</h1>
+           <img src={aboutPage} alt="" />
             
         </div>
     );

@@ -9,6 +9,7 @@ import CategoriesItem from "../Pages/CategoriesItem/CategoriesItem";
 import ItemDetails from "../Pages/ItemDetails/ItemDetails";
 import PrivateRoutes from "./PrivateRoutes";
 import About from "../Pages/About/About";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
             {
                 path:"/register",
                 element:<Register></Register>
+            },
+            {
+                path:"/update-profile",
+                element:<PrivateRoutes><UpdateProfile></UpdateProfile></PrivateRoutes>
             },
             {
                 path:"/categories/:id",
